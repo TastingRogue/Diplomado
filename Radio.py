@@ -1,11 +1,11 @@
 import math
 
-s = (8+16+14)*(1/2)
+def Radius(a,b,c,s):
+    r = math.sqrt(s*(s-a)*(s-b)*(s-c))/s
+    return r
 
+def SemiPerimetro(a,b,c):
+    s = (a+b+c)*(1/2)
+    return s
 
-print(s)
-
-
-r = math.sqrt(s*(s-8)*(s-16)*(s-14))/s
-
-print(r)
+print(Radius(8,16,14,SemiPerimetro(8,16,14)))
